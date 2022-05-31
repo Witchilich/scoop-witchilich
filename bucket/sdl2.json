@@ -1,0 +1,51 @@
+{
+    "version": "2.0.22",
+    "description": "Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.",
+    "homepage": "https://www.libsdl.org",
+    "license": {
+        "identifier": "Zlib",
+        "url": "https://www.libsdl.org/license.php"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://www.libsdl.org/release/SDL2-2.0.22-win32-x64.zip",
+            "hash": "cceff40793be513771dd78274e891390ecd1a4f2d9aca86f0e0dec4860eb5f3b"
+        },
+        "32bit": {
+            "url": "https://www.libsdl.org/release/SDL2-2.0.22-win32-x86.zip",
+            "hash": "69e6e2c6effb82854e2c29903cdb0d33d11038ac637ad33c4a8987b04b2fb900"
+        }
+    },
+    "installer": {
+        "script": [
+            "If (!($global)) { If(is_admin) {error \"Please run the installation command without elevated privilages if you want to install locally\"; exit 1} }",
+            "$currentdir = (Get-Item -Path \".\\\").FullName",
+            "Set-Location $dir",
+            "regsvr32 /s sdl2.dll",
+            "Set-Location $currentdir"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "If (!($global)) { If(is_admin) {error \"Please run the uninstallation command without elevated privilages if you want to uninstall locally\"; exit 1} }",
+            "$currentdir = (Get-Item -Path \".\\\").FullName",
+            "Set-Location $dir",
+            "regsvr32 /u /s sdl2.dll",
+            "Set-Location $currentdir"
+        ]
+    },
+    "checkver": {
+        "url": "https://www.libsdl.org/download-2.0.php",
+        "regex": "SDL version ([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.libsdl.org/release/SDL2-$version-win32-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.libsdl.org/release/SDL2-$version-win32-x86.zip"
+            }
+        }
+    }
+}

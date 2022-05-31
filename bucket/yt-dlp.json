@@ -1,0 +1,37 @@
+{
+    "version": "2022.05.18",
+    "description": "A youtube-dl fork with additional features and fixes.",
+    "homepage": "https://github.com/yt-dlp/yt-dlp",
+    "license": "Unlicense",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2022.05.18/yt-dlp.exe",
+            "hash": "sha512:f8f55be89b8b4b5c9703bb594367ad10c245dd1e1de9182a8a3d8ae06220aeabe200ed9b797d6f176a5d10f99ff3bbb48176c4e52cd9f4cc3c1fac451df42dde"
+        },
+        "32bit": {
+            "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2022.05.18/yt-dlp_x86.exe#/yt-dlp.exe",
+            "hash": "sha512:f637251a9ea843f16c747f8d273245ebb76b58313caa58cbfb25984095e1979a104a635da89cea73253c50e466e5cd7bd3d6cf5baba814434fb457bac46e8ab0"
+        }
+    },
+    "bin": [
+        "yt-dlp.exe",
+        [
+            "yt-dlp.exe",
+            "youtube-dl"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/yt-dlp/yt-dlp/releases/download/$version/yt-dlp.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/yt-dlp/yt-dlp/releases/download/$version/yt-dlp_x86.exe#/yt-dlp.exe"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA2-512SUMS"
+        }
+    }
+}
