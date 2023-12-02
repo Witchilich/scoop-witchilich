@@ -1,0 +1,40 @@
+{
+    "homepage": "https://github.com/justdan96/tsMuxer/",
+    "description": "tsMuxer is a transport stream muxer for remuxing/muxing elementary streams.",
+    "version": "2023-11-26-02-00-15",
+    "license": {
+        "identifier": "Apache-2.0",
+        "url": "https://github.com/justdan96/tsMuxer/blob/master/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/justdan96/tsMuxer/releases/download/nightly-2023-11-26-02-00-15/w64.zip",
+            "hash": "8123019aecf2841068c90eb7062486b45aa6d53a8e037bb60d3d8301abf6cc80"
+        },
+        "32bit": {
+            "url": "https://github.com/justdan96/tsMuxer/releases/download/nightly-2023-11-26-02-00-15/w32.zip",
+            "hash": "5cd1b546dcf5d88591247ca15fa7b2103f695f7effb16aa6590a47d4fdc597d4"
+         }
+    },
+    "shortcuts": [
+        [
+            "tsMuxerGUI.exe",
+            "tsMuxer"
+        ]
+    ],
+    "bin": "tsMuxeR.exe",
+    "checkver": {
+        "url": "https://github.com/justdan96/tsMuxer/tags",
+        "regex": "nightly-([\\d-]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/justdan96/tsMuxer/releases/download/nightly-$version/w64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/justdan96/tsMuxer/releases/download/nightly-$version/w32.zip"
+            }
+        }
+    }
+}
