@@ -1,13 +1,13 @@
 {
     "homepage": "https://www.rationalqm.us/dgmpgdec/dgmpgdec.html",
     "description": "MPEG2 decoder suite used to decode MPEG2 streams from DVD VOBs and Blu-ray, captured transport streams, dvb/digital/hdtv streams, *.mpg, *.m2v, *.ts, *.m2ts files, etc.",
-    "version": "2.0.0.8",
+    "version": "2.0.0.9",
     "license": {
         "identifier": "GPL-2.0-only",
         "url": "https://github.com/rlaphoenix/DGIndex/blob/master/COPYING.txt"
     },
-    "url": "https://www.rationalqm.us/dgmpgdec/dgmpgdec2008.zip",
-    "hash": "60620a16af02ff2a6077262f7caf60b51ef438e772ac7f3baa8b67a4a498bf3b",
+    "url": "https://www.rationalqm.us/dgmpgdec/dgmpgdec2009.zip",
+    "hash": "ba3fdb3664673069554bd78e88f080a490d425b151ff7182548704e47636c73a",
     "installer": {
         "script": "New-Item \"$dir\\DGIndex.ini\" -Force -ErrorAction SilentlyContinue | Out-Null"
     },
