@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/arch1t3cht/Aegisub/releases/download/feature_11/Windows.MSVC.Release.wx.master.-.portable.zip",
-            "hash": "14b6fd29a5017154b1a382b30fe4ac6e54e872cebd55b12923b194c87824d474"
+            "hash": "14b6fd29a5017154b1a382b30fe4ac6e54e872cebd55b12923b194c87824d474",
             "installer": {
                 "script": [
                     "New-Item \"$dir\\hotkey.json\", \"$dir\\mru.json\", \"$dir\\shift_history.json\" -Force -ErrorAction SilentlyContinue | Out-Null",
