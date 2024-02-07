@@ -9,14 +9,14 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/arch1t3cht/Aegisub/releases/download/feature_11/Windows.MSVC.Release.-.portable.zip",
-            "hash": "3aa8642a192ad91c4c563daa30c35c1b34425f7a08a730f97ebfd0b63f84ab42"
+            "hash": "3aa8642a192ad91c4c563daa30c35c1b34425f7a08a730f97ebfd0b63f84ab42",
+            "installer": {
+                "script": [
+                    "New-Item \"$dir\\hotkey.json\", \"$dir\\mru.json\", \"$dir\\shift_history.json\" -Force -ErrorAction SilentlyContinue | Out-Null",
+                    "Expand-7zipArchive \"$dir\\aegisub-portable-64.zip\" -ExtractDir 'aegisub-portable' -Removal"
+                ]
+            }        
         }
-    },
-    "installer": {
-        "script": [
-            "New-Item \"$dir\\hotkey.json\", \"$dir\\mru.json\", \"$dir\\shift_history.json\" -Force -ErrorAction SilentlyContinue | Out-Null",
-            "Expand-7zipArchive \"$dir\\aegisub-portable-64.zip\" -ExtractDir 'aegisub-portable' -Removal"
-        ]
     },
     "shortcuts": [
         [
