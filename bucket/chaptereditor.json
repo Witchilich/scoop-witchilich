@@ -1,10 +1,10 @@
 {
     "homepage": "https://forum.doom9.org/showthread.php?t=169984",
     "description": "Chapter editor and menu editor for OGG, XML, TTXT, m.AVCHD, m.editions-mkv, Matroska Menu",
-    "version": "1.43",
+    "version": "1.45",
     "license": "Freeware",
-    "url": "https://www.videohelp.com/download/chapterEditor%281.43%29.7z",
-    "hash": "804bff7d6e00d3743a9fa99df53e462925dea50d93e86c8100d6cc46629a4981",
+    "url": "https://www.videohelp.com/download/chapterEditor%281.45%29.7z",
+    "hash": "acd7e7bb48831b488b1863525b06c811739e956e83cf8a6a7d6e761ec0d9a256",
     "installer": {
         "script": "New-Item \"$dir\\chapterEditor.ini\", \"$dir\\Favorites.cef\", \"$dir\\Hotkeys.ceh\" -Force -ErrorAction SilentlyContinue | Out-Null"
     },
