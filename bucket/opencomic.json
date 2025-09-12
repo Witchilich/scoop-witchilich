@@ -1,12 +1,12 @@
 {
-    "version": "1.5.0",
+    "version": "1.6.2",
     "description": "Comic and Manga reader, written with Node.js and using Electron",
     "homepage": "https://github.com/ollm/OpenComic",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ollm/OpenComic/releases/download/v1.5.0/OpenComic.Setup.1.5.0.exe#dl.7z",
-            "hash": "ace786e9e6065edd35fc79fad5f9c2d46afe125826666bfc0914c36d5cab1179",
+            "url": "https://github.com/ollm/OpenComic/releases/download/v1.6.2/OpenComic.Setup.1.6.2.exe#dl.7z",
+            "hash": "990b599ebfea28054d5b7b9c4b3032f317457bf7ff88a6650dd0ceeffb420876",
             "installer": {
                 "script": [
                     "Remove-Item \"$dir\\*\" -Exclude 'app-64.7z'",
